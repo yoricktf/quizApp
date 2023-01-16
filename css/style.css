@@ -7,12 +7,11 @@
 
 body {
   margin: 0;
+  background-color: rgb(201, 201, 201);
 }
 
 main {
-  background-color: rgb(201, 201, 201);
   padding: 90px 10px;
-  /* margin-bottom: 500px; */
   height: 100%;
 }
 header {
@@ -53,9 +52,15 @@ header {
 
 .favorite {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+}
+
+.favorite:active {
+  background-image: url(../assets/star.png);
+  background-position: center;
+  background-size: contain;
 }
 
 .answerButton {
@@ -77,7 +82,7 @@ header {
   color: #fff;
   border: 2px solid black;
   padding: 5px 10px;
-  margin: 10px;
+  margin: 10px 10px 0;
 }
 
 footer {
@@ -98,8 +103,14 @@ footer {
 }
 
 .navButton {
-  font-size: 40px;
+  /*
   flex-grow: 1;
   padding: 20px;
-  text-align: center;
+  text-align: center; */
+  height: 50px;
+  margin: 15px;
+}
+
+.active {
+  background-color: red;
 }
