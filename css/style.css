@@ -1,17 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
+
+main {
+  background-color: antiquewhite;
+
+  padding: 90px 10px;
+  /* padding: 10px; */
+  height: 100vh;
+}
 header {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid black;
+  z-index: 20;
+  background-color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid rgb(58, 57, 57);
+}
+
+.tags {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.tag {
+  background-color: grey;
+  border-radius: 25px;
+  color: #fff;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 10px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 #navLinks {
@@ -20,11 +57,12 @@ footer {
   justify-content: space-around;
   padding: 0;
   margin: 0;
+  flex-wrap: nowrap;
 }
 
 .navButton {
   border: 1px solid black;
-  width: 33%;
+  flex-grow: 1;
   padding: 20px;
   text-align: center;
 }
