@@ -107,7 +107,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-#navLinks li {
+#navLinks a {
   flex-grow: 1;
   display: flex;
   justify-content: center;
