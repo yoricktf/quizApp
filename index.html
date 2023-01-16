@@ -86,10 +86,10 @@
         answer.classList.toggle("hidden");
 
         let button = event.target.innerHTML;
-        console.log(button);
         if (button == "Show Answer") {
-          console.log("----------------------");
-          button = "checking";
+          event.target.innerHTML = "Hide Answer";
+        } else {
+          event.target.innerHTML = "Show Answer";
         }
       }
     </script>
