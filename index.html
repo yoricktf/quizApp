@@ -17,8 +17,8 @@
         <h2>
           question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </h2>
-        <a class="answerButton" href="">Show Answer</a>
-        <p class="answer hidden">This is the answer text</p>
+        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
+        <p class="answer hidden">1111111111111111</p>
         <ul class="tags">
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
@@ -30,21 +30,8 @@
         <h2>
           question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </h2>
-        <a class="answerButton" href="">Show Answer</a>
-        <p class="answer hidden">This is the answer text</p>
-        <ul class="tags">
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-        </ul>
-        <img class="favorite" src="./assets/star.png" alt="" />
-      </section>
-      <section class="card">
-        <h2>
-          question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h2>
-        <a class="answerButton" href="">Show Answer</a>
-        <p class="answer hidden">This is the answer text</p>
+        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
+        <p class="answer hidden">222222222222222222</p>
         <ul class="tags">
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
@@ -56,8 +43,21 @@
         <h2>
           question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </h2>
-        <a class="answerButton" href="">Show Answer</a>
-        <p class="answer hidden">This is the answer text</p>
+        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
+        <p class="answer hidden">33333333333333333</p>
+        <ul class="tags">
+          <li class="tag">#tag</li>
+          <li class="tag">#tag</li>
+          <li class="tag">#tag</li>
+        </ul>
+        <img class="favorite" src="./assets/starOutline.png" alt="" />
+      </section>
+      <section class="card">
+        <h2>
+          question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </h2>
+        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
+        <p class="answer hidden">444444444444444444444</p>
         <ul class="tags">
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
@@ -80,5 +80,18 @@
         <img class="navButton profile" src="assets/terminator.png" alt="" />
       </a>
     </footer>
+    <script>
+      function showAnswer() {
+        let answer = event.target.nextElementSibling;
+        answer.classList.toggle("hidden");
+
+        let button = event.target.innerHTML;
+        console.log(button);
+        if (button == "Show Answer") {
+          console.log("----------------------");
+          button = "checking";
+        }
+      }
+    </script>
   </body>
 </html>
