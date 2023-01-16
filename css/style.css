@@ -2,16 +2,16 @@
   font-family: sans-serif;
   box-sizing: border-box;
   color: black;
+  text-decoration: none;
 }
 
 body {
   margin: 0;
+  background-color: rgb(201, 201, 201);
 }
 
 main {
-  background-color: rgb(201, 201, 201);
   padding: 90px 10px;
-  /* margin-bottom: 500px; */
   height: 100%;
 }
 header {
@@ -35,6 +35,9 @@ header {
   border-radius: 15px;
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
 }
+h2 {
+  margin-top: 0;
+}
 
 .answerButton {
   text-decoration: none;
@@ -52,8 +55,21 @@ header {
 
 .favorite {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+}
+
+.favorite:active {
+  background-image: url(../assets/star.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.answerButton {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .tags {
@@ -69,7 +85,7 @@ header {
   color: #fff;
   border: 2px solid black;
   padding: 5px 10px;
-  margin: 10px;
+  margin: 10px 10px 0;
 }
 
 footer {
@@ -89,9 +105,17 @@ footer {
   flex-wrap: nowrap;
 }
 
-.navButton {
-  font-size: 40px;
+#navLinks li {
   flex-grow: 1;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navButton {
+  height: 50px;
+  margin: 15px;
+}
+
+.active {
+  background-color: rgb(110, 110, 110);
 }
