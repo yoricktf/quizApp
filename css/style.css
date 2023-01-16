@@ -35,6 +35,9 @@ header {
   border-radius: 15px;
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
 }
+h2 {
+  margin-top: 0;
+}
 
 .answerButton {
   text-decoration: none;
@@ -102,15 +105,17 @@ footer {
   flex-wrap: nowrap;
 }
 
-.navButton {
-  /*
+#navLinks li {
   flex-grow: 1;
-  padding: 20px;
-  text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.navButton {
   height: 50px;
   margin: 15px;
 }
 
 .active {
-  background-color: red;
+  background-color: rgb(110, 110, 110);
 }
