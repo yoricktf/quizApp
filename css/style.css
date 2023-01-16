@@ -13,9 +13,11 @@ body {
 main {
   padding: 90px 10px;
   height: 100%;
+  margin: 0 auto;
+  max-width: 400px;
 }
 header {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   position: fixed;
   top: 0;
@@ -91,7 +93,7 @@ h2 {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   border-top: 1px solid grey;
 }
@@ -124,6 +126,48 @@ footer {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+/* -----------------------------------------------------------
+Profile Page specific
+-----------------------------------------------------------*/
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistics > .card {
+  margin: 20px;
+  text-align: center;
+}
+
+.statistics img {
+  width: 50px;
+  padding-bottom: 15px;
+}
+
+.stats {
+  margin: 0;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
 /* The switch - the box around the slider */
