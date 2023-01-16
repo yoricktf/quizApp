@@ -2,6 +2,7 @@
   font-family: sans-serif;
   box-sizing: border-box;
   color: black;
+  text-decoration: none;
 }
 
 body {
@@ -54,6 +55,13 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 20px;
+}
+
+.answerButton {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .tags {
