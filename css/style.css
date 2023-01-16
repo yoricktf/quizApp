@@ -139,9 +139,13 @@ Profile Page specific
 }
 
 .profilePicture {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   height: 150px;
   width: auto;
+}
+
+.profile {
+  border-radius: 50%;
 }
 
 .statistics {
