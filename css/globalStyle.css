@@ -1,0 +1,62 @@
+:root {
+  --white: #fff;
+  --backgroundColor: #f0f0f0;
+  --standardBorder: ;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: black;
+  text-decoration: none;
+}
+
+.darkMode {
+  background-color: black;
+  color: var(--white);
+}
+
+body {
+  margin: 0;
+  background-color: var(--backgroundColor);
+}
+
+main {
+  padding: 90px 10px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0px -10px 26px 0px rgba(128, 128, 128, 0.75);
+}
+
+footer a {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navButton {
+  height: 50px;
+  margin: 15px;
+}
+
+.active {
+  background-color: rgb(110, 110, 110);
+}

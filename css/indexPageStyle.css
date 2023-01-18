@@ -1,0 +1,54 @@
+.card {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid rgb(122, 122, 122);
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.answerButton {
+  text-decoration: none;
+  align-self: center;
+  margin: 20px;
+}
+
+.answer {
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.favorite {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+}
+
+.answerButton {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.tags {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.tag {
+  background-color: grey;
+  border-radius: 25px;
+  color: #fff;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 10px 10px 0;
+}
