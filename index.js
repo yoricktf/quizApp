@@ -5,8 +5,10 @@ showAnswer = (event) => {
   let answer = event.nextElementSibling;
   answer.classList.toggle("hidden");
 
+  console.log(event.textContent);
+
   let button = event.innerHTML;
-  button == 'Show Answer' ? event.innerHTML = "Hide Answer" : event.innerHTML = "Show Answer"
+  button === 'Show Answer' ? event.innerHTML = "Hide Answer" : event.innerHTML = "Show Answer"
 }
 
 favoriteButtons.forEach(button => {

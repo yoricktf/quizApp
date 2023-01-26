@@ -42,9 +42,13 @@ form.addEventListener('submit', event => {
   const tags = document.createElement('ul')
   tags.classList.add('tags')
 
-  const tag = document.createElement('li')
-  tag.classList.add('tag')
-  tag.textContent = `${data.tags}`
+  const allTags = data.tags.split(',')
+  allTags.forEach(element => {
+    const tag = document.createElement('li')
+    tag.classList.add('tag')
+    tag.textContent = element
+    tags.append(tag)
+  });
 
   const bookmark = document.createElement('img')
   bookmark.classList.add('favorite')
@@ -52,5 +56,6 @@ form.addEventListener('submit', event => {
 
   newCardsSection.append(cardSection)
   cardSection.append(header, button, answer, tags, bookmark)
-  tags.append(tag)
+  form.reset()
+  questionInput.focus()
 })

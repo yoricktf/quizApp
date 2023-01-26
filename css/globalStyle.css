@@ -1,10 +1,17 @@
 :root {
+  --backgroundColor: rgb(240, 240, 240);
+  --lightBackgroundColor: rgb(255, 255, 255);
+  --cardColor: rgb(255, 255, 255);
+  --highlightColor: rgb(227, 227, 227);
+  --greyHighlight: #dfdfdf;
+
   --white: #fff;
   --grey: #9f9f9f;
   --lightGrey: #dfdfdf;
-  --backgroundColor: rgb(227, 227, 227);
-  --dark-mode: #000;
-  --standardBorder: ;
+
+  --darkModeBackground: rgb(0, 0, 0);
+  --darkModeLightBackground: rgb(42, 42, 42);
+  --darkModeTextColor: rgb(255, 255, 255);
 }
 
 * {
@@ -51,7 +58,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--lightBackgroundColor);
   box-shadow: 0px -10px 26px 0px rgba(128, 128, 128, 0.275);
 }
 
@@ -67,6 +74,6 @@ footer a {
 }
 
 .active {
-  background-color: var(--grey);
+  background-color: var(--highlightColor);
   /* border: 1px solid black; */
 }
