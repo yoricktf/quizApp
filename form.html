@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>QuizApp</h1>
+      <a href="./profile.html">
+        <img class="navButton profile" src="assets/terminator.png" alt="" />
+      </a>
+    </header>
+    <main>
+      <form action="">
+        <label for="question">Your Question:</label>
+        <textarea
+          required
+          id="question"
+          name="question"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <label for="answer">Your Answer:</label>
+        <textarea
+          required
+          id="answer"
+          name="answer"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <label for="tags">Tags:</label>
+        <input required id="tags" name="tags" type="text" />
+        <button>Make A New Card</button>
+      </form>
+    </main>
+
+    <footer id="navLinks">
+      <a href="./index.html">
+        <img class="navButton" src="assets/homeOutline.png" alt="" />
+      </a>
+
+      <a href="./bookmarks.html">
+        <img class="navButton" src="assets/bookmarkChecked.svg" alt="" />
+      </a>
+
+      <a class="active" href="./newCard.html">
+        <img class="navButton" src="assets/plus.svg" alt="" />
+      </a>
+    </footer>
+  </body>
+</html>
