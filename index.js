@@ -1,25 +1,18 @@
 const favoriteButtons = document.querySelectorAll('.favorite')
 
-showAnswer = () => {
-  let answer = event.target.nextElementSibling;
+showAnswer = (event) => {
+  console.log(event);
+  let answer = event.nextElementSibling;
   answer.classList.toggle("hidden");
 
-  let button = event.target.innerHTML;
-  button == 'Show Answer' ? event.target.innerHTML = "Hide Answer" : event.target.innerHTML = "Show Answer"
+  let button = event.innerHTML;
+  button == 'Show Answer' ? event.innerHTML = "Hide Answer" : event.innerHTML = "Show Answer"
 }
 
 favoriteButtons.forEach(button => {
   button.addEventListener('click', (event) => {
-    // event.target.classList.toggle('favoriteSelected')
-    // console.log(event.target.src);
     event.target.src.includes('bookmarkPlus') || event.target.src.includes('bookmarkChecked') ? event.target.src = './assets/bookmarkCross.svg'
       : event.target.src = './assets/bookmarkPlus.svg'
-
-
-
-
-
-
   })
 })
 
