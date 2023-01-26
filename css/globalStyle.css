@@ -1,8 +1,9 @@
 :root {
-  --backgroundColor: rgb(227, 227, 227);
+  --backgroundColor: rgb(240, 240, 240);
   --lightBackgroundColor: rgb(255, 255, 255);
   --cardColor: rgb(255, 255, 255);
   --highlightColor: rgb(227, 227, 227);
+  --greyHighlight: #dfdfdf;
 
   --white: #fff;
   --grey: #9f9f9f;

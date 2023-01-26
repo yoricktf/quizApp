@@ -20,6 +20,7 @@
   border: 2px solid black;
   border-radius: 15px;
   padding: 10px 15px;
+  background-color: var(--lightBackgroundColor);
 }
 
 .answer {
@@ -51,7 +52,7 @@
 }
 
 .tag {
-  background-color: var(--lightGrey);
+  background-color: var(--greyHighlight);
   border-radius: 25px;
   border: 1px solid black;
   /* color: #fff; */
