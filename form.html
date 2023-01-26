@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <script src="./formPage.js" defer></script>
+    <title>New Card</title>
   </head>
   <body>
     <header>
@@ -15,14 +16,14 @@
       </a>
     </header>
     <main>
-      <form action="">
+      <form>
         <label for="question">Your Question:</label>
         <textarea
           required
           id="question"
           name="question"
           cols="30"
-          rows="10"
+          rows="5"
         ></textarea>
         <label for="answer">Your Answer:</label>
         <textarea
@@ -30,12 +31,13 @@
           id="answer"
           name="answer"
           cols="30"
-          rows="10"
+          rows="5"
         ></textarea>
         <label for="tags">Tags:</label>
         <input required id="tags" name="tags" type="text" />
         <button>Make A New Card</button>
       </form>
+      <div class="newCards"></div>
     </main>
 
     <footer id="navLinks">
