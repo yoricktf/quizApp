@@ -19,6 +19,12 @@
   color: var(--white);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
 body {
   margin: 0;
   background-color: var(--backgroundColor);
