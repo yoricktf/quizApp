@@ -6,3 +6,14 @@ form {
 label {
   margin: 10px 0 5px;
 }
+
+#newCardButton {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.charecterCounter {
+  color: grey;
+  font-size: 0.7rem;
+  margin-top: 0;
+}
