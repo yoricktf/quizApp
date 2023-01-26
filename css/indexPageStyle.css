@@ -3,17 +3,23 @@
   margin: 20px 0;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 15px;
-  border: 1px solid rgb(122, 122, 122);
   border-radius: 15px;
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.card > h2 {
+  margin-right: 40px;
 }
 
 .answerButton {
   text-decoration: none;
   align-self: center;
   margin: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .answer {
@@ -26,20 +32,14 @@
 
 .favorite {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 40px;
+  top: 0;
+  right: 0;
+  width: 60px;
 }
 
 .favoriteSelected {
-  background-image: url(../assets/star.png);
+  background-image: url(../assets/bookmarkChecked.svg);
   background-size: contain;
-}
-
-.answerButton {
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px 15px;
 }
 
 .tags {
@@ -47,12 +47,14 @@
   display: flex;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .tag {
-  background-color: grey;
+  background-color: var(--lightGrey);
   border-radius: 25px;
-  color: #fff;
+  border: 1px solid black;
+  /* color: #fff; */
   padding: 5px 10px;
   margin: 10px 0 0 5px;
 }

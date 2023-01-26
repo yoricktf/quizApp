@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="index.js" defer></script>
     <title>QuizApp</title>
   </head>
   <body>
@@ -23,47 +24,10 @@
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
-        </ul>
-        <img class="favorite" src="./assets/starOutline.png" alt="" />
-      </section>
-      <section class="card">
-        <h2>
-          question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h2>
-        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
-        <p class="answer hidden">222222222222222222</p>
-        <ul class="tags">
-          <li class="tag">#tag</li>
           <li class="tag">#tag</li>
           <li class="tag">#tag</li>
         </ul>
-        <img class="favorite" src="./assets/starOutline.png" alt="" />
-      </section>
-      <section class="card">
-        <h2>
-          question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h2>
-        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
-        <p class="answer hidden">33333333333333333</p>
-        <ul class="tags">
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-        </ul>
-        <img class="favorite" src="./assets/starOutline.png" alt="" />
-      </section>
-      <section class="card">
-        <h2>
-          question Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h2>
-        <button onclick="showAnswer()" class="answerButton">Show Answer</button>
-        <p class="answer hidden">444444444444444444444</p>
-        <ul class="tags">
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-          <li class="tag">#tag</li>
-        </ul>
-        <img class="favorite" src="./assets/starOutline.png" alt="" />
+        <img class="favorite" src="./assets/bookmarkPlus.svg" alt="" />
       </section>
     </main>
 
@@ -80,20 +44,5 @@
         <img class="navButton profile" src="assets/terminator.png" alt="" />
       </a>
     </footer>
-
-    <script src="index.js"></script>
-    <!-- <script>
-      function showAnswer() {
-        let answer = event.target.nextElementSibling;
-        answer.classList.toggle("hidden");
-
-        let button = event.target.innerHTML;
-        if (button == "Show Answer") {
-          event.target.innerHTML = "Hide Answer";
-        } else {
-          event.target.innerHTML = "Show Answer";
-        }
-      }
-     </script> -->
   </body>
 </html>

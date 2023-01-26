@@ -9,8 +9,17 @@ showAnswer = () => {
 }
 
 favoriteButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    event.target.classList.toggle('favoriteSelected')
+  button.addEventListener('click', (event) => {
+    // event.target.classList.toggle('favoriteSelected')
+    // console.log(event.target.src);
+    event.target.src.includes('bookmarkPlus') || event.target.src.includes('bookmarkChecked') ? event.target.src = './assets/bookmarkCross.svg'
+      : event.target.src = './assets/bookmarkPlus.svg'
+
+
+
+
+
+
   })
 })
 
