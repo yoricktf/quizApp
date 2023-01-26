@@ -1,14 +1,12 @@
 const favoriteButtons = document.querySelectorAll('.favorite')
 
 showAnswer = (event) => {
-  console.log(event);
+  // console.log(event);
   let answer = event.nextElementSibling;
   answer.classList.toggle("hidden");
 
-  console.log(event.textContent);
-
-  let button = event.innerHTML;
-  button === 'Show Answer' ? event.innerHTML = "Hide Answer" : event.innerHTML = "Show Answer"
+  let button = event.textContent.trim();
+  button === 'Show Answer' ? event.textContent = "Hide Answer" : event.textContent = "Show Answer"
 }
 
 favoriteButtons.forEach(button => {
