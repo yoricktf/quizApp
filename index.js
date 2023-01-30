@@ -1,4 +1,10 @@
 const favoriteButtons = document.querySelectorAll('.favorite')
+const darkToggle = document.querySelector('#darkToggle')
+const header = document.querySelector('header')
+const footer = document.querySelector('footer')
+const stats = document.querySelector('.statistics')
+
+console.log(stats)
 
 showAnswer = (event) => {
   // console.log(event);
@@ -10,15 +16,24 @@ showAnswer = (event) => {
 }
 
 favoriteButtons.forEach(button => {
-  button.addEventListener('click', (event) => {
-    event.target.src.includes('bookmarkPlus') || event.target.src.includes('bookmarkChecked') ? event.target.src = './assets/bookmarkCross.svg'
-      : event.target.src = './assets/bookmarkPlus.svg'
+  // button.addEventListener('click', (event) => {
+  //   event.target.src.includes('bookmarkPlus') || event.target.src.includes('bookmarkChecked') ? event.target.src = './assets/bookmarkCross.svg'
+  //     : event.target.src = './assets/bookmarkPlus.svg'
+  // })
+
+  button.addEventListener('click', event => {
+    if (event.target.src.includes('bookmarkPlus')) {
+      event.target.src = './assets/bookmarkCross.svg'
+    } else if (event.target.src.includes('bookmarkChecked')) {
+      event.target.src = './assets/bookmarkCross.svg'
+    } else if (event.target.src = './assets/bookmarkCross.svg') {
+      event.target.src = './assets/bookmarkPlus.svg'
+    }
   })
 })
 
-
-darkMode = () => {
-  console.log('execute ========================')
-  // let element = document.body;
-  // element.classList.toggle("darkMode");
-}
+darkToggle.addEventListener('click', event => {
+  document.body.classList.toggle('darkMode')
+  header.classList.toggle('darkModeExtra')
+  footer.classList.toggle('darkModeExtra')
+})
